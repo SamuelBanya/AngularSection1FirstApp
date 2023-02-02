@@ -1,0 +1,14 @@
+* Creating A New Angular App With Bootstrap Instructions
+First, use this command:
+
+ng new (app-name-with-dashes) --no-strict 
+
+Ex:
+ng new assignment-2 --no-strict 
+
+Aftewrards, here are the instructions on how to add bootstrap to a project:
+
+npm install --save bootstrap 
+
+Then, go to the 'angular.json' file, go to projects > architect > build > styles, and make sure the following line is added:
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
