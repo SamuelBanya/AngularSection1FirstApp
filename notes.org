@@ -6,6 +6,11 @@ ng new (app-name-with-dashes) --no-strict
 Ex:
 ng new assignment-2 --no-strict 
 
+Then, when it asks the following, say 'No' and hit enter:
+"? Would you like to add Angular routing?"
+
+Then, add the default CSS stylesheet and hit enter
+
 Aftewrards, here are the instructions on how to add bootstrap to a project:
 
 npm install --save bootstrap 
