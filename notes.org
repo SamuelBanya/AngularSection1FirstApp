@@ -11,9 +11,24 @@ Then, when it asks the following, say 'No' and hit enter:
 
 Then, add the default CSS stylesheet and hit enter
 
-Aftewrards, here are the instructions on how to add bootstrap to a project:
+* Adding Bootstrap To The Project
+Afterwards, here are the instructions on how to add bootstrap to a project:
 
 npm install --save bootstrap 
 
 Then, go to the 'angular.json' file, go to projects > architect > build > styles, and make sure the following line is added:
     "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+* Adding 'FormsModule' To 'module' Component For Application
+Annoyingly by default, Angular does NOT import the 'FormsModule' for some reason, even though it is used everywhere in a typical Angular project
+
+This means that you have to add the import statement in the 'app.module.ts' file:
+
+import { FormsModule } from '@angular/forms';
+
+You then have to add it in the 'imports' section within the 'app.module.ts' file:
+
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
