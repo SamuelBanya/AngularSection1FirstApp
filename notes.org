@@ -14,7 +14,14 @@ Then, add the default CSS stylesheet and hit enter
 * Adding Bootstrap To The Project
 Afterwards, here are the instructions on how to add bootstrap to a project:
 
-npm install --save bootstrap 
+NOTE: You NEED to use 'bootstrap@3' aka Bootstrap Version 3 to follow along with the related course as per this thread:
+- https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/17862130#questions/10444944
+
+Related link from w3schools that details the differences between Bootstrap versions:
+- https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+
+Related command to install and save 'bootstrap@3' aka Bootstrap Version 3:
+npm install --save bootstrap@3 
 
 Then, go to the 'angular.json' file, go to projects > architect > build > styles, and make sure the following line is added:
     "node_modules/bootstrap/dist/css/bootstrap.min.css",
